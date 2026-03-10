@@ -1,6 +1,7 @@
 package Session02;
 
 
+//@FunctionalInterface là annotation dùng để đánh dấu interface chỉ có đúng 1 phương thức trừu tượng.
 @FunctionalInterface
 interface PasswordValidator{
     boolean validate(String password);
