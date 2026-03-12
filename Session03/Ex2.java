@@ -9,9 +9,9 @@ public class Ex2 {
 
     public static void main(String[] args) {
         List<User> users = List.of(
-                new User("alice", "alice@gmail.com"),
-                new User("bob", "bob@yahoo.com"),
-                new User("charlie", "charlie@gmail.com")
+                new User("toanalice", "alice@gmail.com"),
+                new User("toanbob", "bob@yahoo.com"),
+                new User("toancharlie", "charlie@gmail.com")
         );
 
 

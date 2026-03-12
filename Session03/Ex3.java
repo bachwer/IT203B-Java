@@ -14,9 +14,9 @@ public class Ex3 {
 
         );
 
-        Optional<User> findUserByUsername(String username){
+        Optional<User> findUserByUsername(){
             return users.stream()
-                    .filter(user -> user.username().equals(username))
+                    .filter(user -> user.username().equals("Alice"))
                     .findFirst();
         }
     }
@@ -24,7 +24,7 @@ public class Ex3 {
     public static void main(String[] args) {
         UserRepository repo = new UserRepository();
 
-        Optional<User> user = repo.findUserByUsername("Alice");
+        Optional<User> user = repo.findUserByUsername();
 
 //        user.ifPresent(u -> System.out.println("Welcome: " + u.username()));
 
